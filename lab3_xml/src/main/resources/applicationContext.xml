@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ไฟล์นิยาม Bean -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- id คือ รหัสของ Bean, class คือตัวระบุว่าสร้างจากที่ไหน -->
+    <bean id="user" class="com.example.model.UserModel">
+        <!-- property คือ constructor โดยจะใช้กำหนด Field ของ Class -->
+        <property name="name" value="Ekkawich Pilawan"/>
+        <property name="age" value="140"/>
+    </bean>
+    
+</beans>
